@@ -24,7 +24,7 @@ public class ValidacaoCadastros {
 		System.out.println(String.format("Loja: %s - CNPJ: %s", 
 				loja.getRazaoSocial(), 
 				loja.getCnpj()));
-		System.out.println(String.format("EndereÃ§o: %s, %s - %s", 
+		System.out.println(String.format("Endereço: %s, %s - %s", 
 				loja.getEndereco().getRua(), 
 				loja.getEndereco().getNumero(),
 				loja.getEndereco().getComplemento()));
@@ -42,11 +42,16 @@ public class ValidacaoCadastros {
 		
 		System.out.println("Produtos: ");
 		
-		if(produtos.contains("Moto G 8")) {
-			System.out.println("Produto repetido");
-		} else {
-			for(Produto produto : loja.getProdutos()) {
-				System.out.println("Produto: " + produto.getDescricao());
+		
+		for (int i = 0; i < loja.getProdutos().size(); i++) {
+			
+			for (int k = i+1; k < loja.getProdutos().size(); k++) {
+				if(loja.getProdutos().get(i).getDescricao() 
+						== loja.getProdutos().get(k).getDescricao()) {
+					System.out.println(String.format("Atenção! O produto '%s' já foi cadastrado previamente.", loja.getProdutos().get(i).getDescricao()));
+				} else {
+					System.out.println(loja.getProdutos().get(i).getDescricao());
+				}
 			}
 		}
 		

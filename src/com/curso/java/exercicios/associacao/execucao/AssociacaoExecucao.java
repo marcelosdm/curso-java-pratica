@@ -20,7 +20,7 @@ public class AssociacaoExecucao {
 		List<Setor> setores = new ArrayList<>();
 		
 		
-		Endereco endereco1 = new Endereco(1, "Rua Volunt√°rios da Franca", 123, "Cal√ßad√£o");
+		Endereco endereco1 = new Endereco(1, "Rua Volunt·rios da Franca", 123, "CalÁad„o");
 //		loja1.setEndereco(endereco1);
 		
 		Setor setor1 = new Setor(1, "Comercial", "3723-9999");
@@ -31,11 +31,11 @@ public class AssociacaoExecucao {
 //		loja1.setSetores(setores);
 		
 		
-		Grupo grupo1 = new Grupo(1, "Eletr√¥nicos");
-		Grupo grupo2 = new Grupo(2, "Vestu√°rio");
+		Grupo grupo1 = new Grupo(1, "EletrÙnicos");
+		Grupo grupo2 = new Grupo(2, "Vestu·rio");
 		
 		Produto produto1 = new Produto(1, "Moto G 8", 900,"15/11/2019","Motorola");
-		Produto produto2 = new Produto(2, "Cal√ßa jeans", 150, "15/11/2019", "Levi's");
+		Produto produto2 = new Produto(2, "CalÁa jeans", 150, "15/11/2019", "Levi's");
 		Produto produto3 = new Produto(1, "Moto G 8", 900,"15/11/2019","Motorola");
 
 		produto1.setGrupo(grupo1);
